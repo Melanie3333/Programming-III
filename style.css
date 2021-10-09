@@ -1,0 +1,89 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+#defaultCanvas0 {
+   display: block;
+   margin: 10px auto 10px auto;
+   border: 1px solid #ad9393;
+   border-radius: 2px;
+}
+
+h2 {
+   text-align: center;
+   margin: 5px 0 5px 0;
+}
+
+.yndhanur {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+.game td,
+.game th {
+   border: 1px solid rgb(179, 179, 179);
+   padding: 10px;
+}
+
+.game tr {
+   background-color: #ffffff;
+}
+
+.game tr th {
+   padding-top: 12px;
+   padding-bottom: 12px;
+   text-align: center;
+}
+
+h1, h3 {
+   margin: 5px;
+}
+
+
+.event-button {
+   text-decoration: none;
+   outline: none;
+   cursor: pointer;
+   background-color: #ffffff;
+   border: 1px solid #abb4b8;
+   border-radius: 5px;
+   color: #a6acaf;
+   padding: 5px;
+   margin: 3px 0;
+}
+
+.event-button:hover {
+   color: #ffffff;
+   background-color: #a2a5a7;
+}
+
+.event-button:active {
+   background-color: #aabfc9;
+}
+
+.events-container {
+
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin: 0 100px 0 100px;
+
+}
+
+.evchors{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   text-align: center;
+   margin: 0 250px;
+}
+
+.game {
+   margin: 0 50px;
+}

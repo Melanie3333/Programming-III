@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Programming III</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="p5.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h2>Programming III</h2>
+        <div class="yndhanur">
+            <div class="table-container">
+                <table class="game">
+                    <tr>
+                        <th scope="col" style="width: 30px;"></th>
+                        <th scope="col">Գույն</th>
+                        <th scope="col">Հերոս</th>
+                        <th scope="col">Նկարագրություն</th>
+                        <th scope="col">Ընդհանուր քանակ</th>
+                    </tr>
+                    <tr>
+                        <td scope="row" style="width: 30px;">1</td>
+                        <td scope="row" style="background-color:#52b000;"></td>
+                        <td scope="row">Խոտ</td>
+                        <td scope="row">բազմանում են մոտակա 8 վանդակներում</td>
+                        <td id="GrassCount">0</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" style="width: 30px;">2</td>
+                        <td scope="row" style="background-color:#ffff19;"></td>
+                        <td scope="row">Խոտակեր</td>
+                        <td scope="row">ապրում են խոտեր ուտելով, բազմանում երբ էներգիան հասնում է 8ի և մեռնում երբ 0 է դառնում</td>
+                        <td id="GrassEaterCount">0</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" style="width: 30px;">3</td>
+                        <td scope="row" style="background-color:#d90000;"></td>
+                        <td scope="row">Գիշատիչ</td>
+                        <td scope="row">սնվում է խոտակերներով, բազմանում երբ էներգիան հասնում է 12ի և մեռնում երբ 0 է դառնում</td>
+                        <td id="GishatichCount">0</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" style="width: 30px;">4</td>
+                        <td scope="row" style="background-color:#1d2ec2;"></td>
+                        <td scope="row">Որսորդ</td>
+                        <td scope="row">որսում է գիշատիչներին, բազմանում երբ էներգիան հասնում է 16ի և մեռնում երբ 0 է դառնում</td>
+                        <td id="VorsordCount">0</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" style="width: 30px;">5</td>
+                        <td scope="row" style="background-color:#8b00c7;"></td>
+                        <td scope="row">Բույսեր</td>
+                        <td scope="row">բազմանում են մոտակա 8 վանդակներում՝ լցնելով դաշտը նոր ծաղիկներով</td>
+                        <td id="BuyserCount">0</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" style="width: 30px;">6</td>
+                        <td scope="row" style="background-color:#521018;"></td>
+                        <td scope="row">Միջատ</td>
+                        <td scope="row">ոչնչացնում է բույսերին՝ դաշտի ծաղիկներին</td>
+                        <td id="MijatCount">0</td>
+                    </tr>
+                </table>
+            </div>
+        </div>            
+        <div class="events-container">
+                <div class="hchors"><h4>Իրադարձություններ</h4></div>
+                <div class="evchors">
+                <a class="event-button" onclick="restart()">Restart</a>
+                <a class="event-button" onclick="addGrass()">Add Grass</a>
+                <a class="event-button" onclick="addGrassEater()">Add Grass Eater</a>
+                <a class="event-button" onclick="addGishatich()">Add Gishatich</a>
+                <a class="event-button" onclick="addVorsord()">Add Vorsord</a>
+                <a class="event-button" onclick="addBuyser()">Add Buyser</a>
+                <a class="event-button" onclick="addMijat()">Add Mijat</a>
+                <a class="event-button" onclick="Fire()">Fire</a>
+                </div>
+        </div>
+</body>
+</html>
